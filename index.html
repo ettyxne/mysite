@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John - Web Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="theme.js" defer></script>
+</head>
+<body>
+    <div id="menu" class="menu-overlay">
+        <div class="menu-overlay__container container">
+            <a href="#" class="menu-overlay__close" aria-label="Close menu">
+                <img src="images/menu-close.svg" alt="Close menu" class="burger__icon">
+            </a>
+            <nav class="menu-overlay__nav">
+                <ul>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="menu-overlay__footer"><div class="container">John Doe, aspiring web developer</div></div>
+    </div>
+<header class="header">
+    <div class="container header__container">
+        <a href="#" class="header__theme-toggle">🌙 theme</a>
+        <nav class="header__nav">
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+            </ul>
+        </nav>
+        <!-- Burger menu: open/close icons toggle via :target on #menu -->
+        <div class="header__burger">
+            <a href="#menu" class="burger burger--open" aria-label="Open menu">
+                <img src="images/menu.svg" alt="Open menu" class="burger__icon">
+            </a>
+            <a href="#" class="burger burger--close" aria-label="Close menu">
+                <img src="images/menu-close.svg" alt="Close menu" class="burger__icon">
+            </a>
+        </div>
+    </div>
+</header>
+<section id="about" class="hero">
+    <div class="container hero__container">
+        <div class="hero__content">
+            <p class="section-pre-title">about me</p>
+            <h1 class="hero__title">Hi, <span class="text-primary">I'm John</span>, a beginner web developer.</h1>
+            <p class="hero__description">Since 2025, I have been passionate about web technologies, studying at an IT college and studying all modern trends and directions of development of the web industry.</p>
+            <div class="hero__socials">
+                <p>Check out my</p>
+                <div class="hero__social-icons">
+                    <a href="#" class="hero__social-icon">
+                        <img src="images/github.svg" alt="GitHub">
+                    </a>
+                    <a href="#" class="hero__social-icon">
+                        <img src="images/telegram.svg" alt="Telegram">
+                    </a>
+                    <a href="#" class="hero__social-icon">
+                        <img src="images/linkedin.svg" alt="LinkedIn">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="hero__image-wrapper">
+            <div class="hero__image-container">
+                <img src="images/portrait.png" alt="Portrait of John" class="hero__photo">
+                <img src="images/decoration.svg" alt="" class="hero__decoration">
+            </div>
+        </div>
+    </div>
+    <div class="hero__scroll-indicator">
+        <div class="hero__scroll-line"></div>
+        <span>scroll down</span>
+    </div>
+</section>
+<section id="skills" class="skills">
+    <div class="container skills__container">
+        <p class="section-pre-title text-center">skills</p>
+        <h2 class="skills__title">My Skills</h2>
+        <p class="skills__subtitle">I am constantly learning and developing, expanding my professional and social skills.</p>
+        <div class="skills__content">
+            <div class="skills__tags">
+                <span class="skills__tag">HTML</span>
+                <span class="skills__tag">CSS</span>
+                <span class="skills__tag">JavaScript</span>
+                <span class="skills__tag">VS Code</span>
+                <span class="skills__tag">GIT</span>
+                <span class="skills__tag">DevTools</span>
+                <span class="skills__tag">Figma</span>
+                <span class="skills__tag">Postman</span>
+                <span class="skills__tag">TypeScript</span>
+                <span class="skills__tag">React</span>
+                <span class="skills__tag">Redux Toolkit</span>
+                <span class="skills__tag">SQL</span>
+                <span class="skills__tag">Webpack</span>
+                <span class="skills__tag">Vite</span>
+                <span class="skills__tag">Node.js</span>
+                <span class="skills__tag">Python</span>
+                <span class="skills__tag">REST API</span>
+            </div>
+            <div class="skills__developer">
+                <h3 class="skills__developer-title">Developer Skills</h3>
+                <div class="skills__bar-wrapper">
+                    <p>HTML5</p>
+                    <div class="skills__bar">
+                        <div class="skills__bar-progress" style="width: 75%;"></div>
+                    </div>
+                </div>
+                <div class="skills__bar-wrapper">
+                    <p>CSS3</p>
+                    <div class="skills__bar">
+                        <div class="skills__bar-progress" style="width: 65%;"></div>
+                    </div>
+                </div>
+                <div class="skills__bar-wrapper">
+                    <p>JavaScript</p>
+                    <div class="skills__bar">
+                        <div class="skills__bar-progress" style="width: 50%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="projects" class="portfolio">
+    <div class="container">
+        <p class="section-pre-title">projects</p>
+        <h2 class="portfolio__title">My Portfolio</h2>
+        <p class="portfolio__subtitle">My best works during my studies and participation in open web community projects.</p>
+        <div class="portfolio__grid">
+            <a href="#" class="portfolio__card portfolio__card--wide">
+                <img src="images/project1.png" alt="Project 1" class="portfolio__image">
+                <div class="portfolio__overlay"></div>
+                <div class="portfolio__content">
+                    <span class="portfolio__category">category</span>
+                    <h3 class="portfolio__card-title">Cool two-line headline</h3>
+                    <div class="btn btn--light">read more</div>
+                </div>
+            </a>
+            <a href="#" class="portfolio__card portfolio__card--tall">
+                <img src="images/project2.png" alt="Project 2" class="portfolio__image">
+                <div class="portfolio__overlay"></div>
+                <div class="portfolio__content">
+                    <span class="portfolio__category">category</span>
+                    <h3 class="portfolio__card-title">Cool three-line headline</h3>
+                    <div class="btn btn--light">read more</div>
+                </div>
+            </a>
+            <a href="#" class="portfolio__card portfolio__card--tall">
+                <img src="images/project3.png" alt="Project 3" class="portfolio__image">
+                <div class="portfolio__overlay"></div>
+                <div class="portfolio__content">
+                    <span class="portfolio__category">category</span>
+                    <h3 class="portfolio__card-title">Cool three-line headline</h3>
+                    <div class="btn btn--light">read more</div>
+                </div>
+            </a>
+            <a href="#" class="portfolio__card portfolio__card--tall">
+                <img src="images/project4.png" alt="Project 4" class="portfolio__image">
+                <div class="portfolio__overlay"></div>
+                <div class="portfolio__content">
+                    <span class="portfolio__category">category</span>
+                    <h3 class="portfolio__card-title">Cool three-line headline</h3>
+                    <div class="btn btn--light">read more</div>
+                </div>
+            </a>
+            <a href="#" class="portfolio__card portfolio__card--tall">
+                <img src="images/project5.png" alt="Project 5" class="portfolio__image">
+                <div class="portfolio__overlay"></div>
+                <div class="portfolio__content">
+                    <span class="portfolio__category">category</span>
+                    <h3 class="portfolio__card-title">Cool three-line headline</h3>
+                    <div class="btn btn--light">read more</div>
+                </div>
+            </a>
+            <a href="#" class="portfolio__card portfolio__card--wide">
+                <img src="images/project6.png" alt="Project 6" class="portfolio__image">
+                <div class="portfolio__overlay"></div>
+                <div class="portfolio__content">
+                    <span class="portfolio__category">category</span>
+                    <h3 class="portfolio__card-title">Cool two-line headline</h3>
+                    <div class="btn btn--light">read more</div>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
+<section id="experience" class="experience">
+    <div class="container experience__container">
+        <p class="section-pre-title text-center">experience</p>
+        <h2 class="experience__title">Experience</h2>
+        <p class="experience__subtitle">My professional journey in learning and self-development as a beginner web engineer</p>
+        <div class="experience__grid">
+            <div class="experience__card">
+                <span class="experience__year">2023</span>
+                <h3 class="experience__job-title">SOME EXPERIENCE 1</h3>
+                <p class="experience__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in suscipit mi. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+            </div>
+            <div class="experience__card">
+                <span class="experience__year">2024</span>
+                <h3 class="experience__job-title">SOME EXPERIENCE 2</h3>
+                <p class="experience__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in suscipit mi. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+            </div>
+            <div class="experience__card">
+                <span class="experience__year">2025</span>
+                <h3 class="experience__job-title">SOME EXPERIENCE 3</h3>
+                <p class="experience__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in suscipit mi. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+            </div>
+            <div class="experience__card">
+                <span class="experience__year">2026</span>
+                <h3 class="experience__job-title">SOME EXPERIENCE 4</h3>
+                <p class="experience__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in suscipit mi. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="contact" class="contact">
+    <div class="container contact__container">
+        <div class="contact__text-content">
+            <p class="section-pre-title">contacts</p>
+            <h2 class="contact__title">Contact With Me</h2>
+            <p class="contact__subtitle">If you are interested in cooperation, I will be glad to receive your proposals and work on joint projects.</p>
+            <div class="contact__info-box">
+                <div class="contact__info-item">
+                    <h4>Location</h4>
+                    <p>Moscow, Russia</p>
+                </div>
+                <div class="contact__info-item">
+                    <h4>Email</h4>
+                    <p><a href="mailto:john@example.com">john@example.com</a></p>
+                </div>
+                <div class="contact__info-item">
+                    <h4>Phone</h4>
+                    <p><a href="tel:+79871234560">+7 987 123-45-60</a></p>
+                </div>
+            </div>
+        </div>
+        <form class="contact__form">
+            <div class="contact__form-row">
+                <div class="contact__form-group">
+                    <label for="name">You Name <span class="contact__required">*</span></label>
+                    <input type="text" id="name" placeholder="Please introduce yourself">
+                    <small>Minimum number of characters - 3</small>
+                </div>
+                <div class="contact__form-group">
+                    <label for="email">Your Email <span class="contact__required">*</span></label>
+                    <input type="email" id="email" placeholder="Please enter your email address">
+                    <small>Address format - test@example.com</small>
+                </div>
+            </div>
+            <div class="contact__form-group">
+                <label for="message">Message <span class="contact__required">*</span></label>
+                <textarea id="message" rows="4" placeholder="Please enter your message"></textarea>
+            </div>
+            <div class="contact__form-footer">
+                <button type="submit" class="btn btn--primary">submit</button>
+                <p class="contact__privacy-notice">By clicking the submit button You confirm my consent to the processing of <a href="#">personal data</a></p>
+            </div>
+        </form>
+    </div>
+</section>
+<footer class="footer">
+    <div class="container footer__content">
+        <nav class="footer__nav">
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><svg width="1" height="24" viewBox="0 0 1 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+ <rect width="1" height="24" fill="#404040"/>
+ </svg></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><svg width="1" height="24" viewBox="0 0 1 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+ <rect width="1" height="24" fill="#404040"/>
+ </svg></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><svg width="1" height="24" viewBox="0 0 1 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+ <rect width="1" height="24" fill="#404040"/>
+ </svg></li>
+                <li><a href="#experience">Experience</a></li>
+            </ul>
+        </nav>
+        <div class="footer__info">
+            <p>2025-2026 IT HEXLET</p>
+            <p class="footer__note">This project is a practical project for mastering the structure and style of a web page.</p>
+        </div>
+        <a href="#" class="footer__back-to-top">BACK TO TOP</a>
+    </div>
+</footer>
+</body>
+</html>
